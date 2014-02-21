@@ -1,0 +1,86 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>_paperapp</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		
+        <link rel="stylesheet" href="styles/77c6676b.main.css">
+    </head>
+    <body>
+        <div id="afui">
+			<div id="header">
+				<h1 id="pageTitle">Demo App</h1>
+			</div>
+			
+			<div id="content">
+				<div title="Main page" class="panel" selected="true" id="main">
+					<a href="#" onclick="$.ui.toggleSideMenu(true)">open side menu</a>
+					
+				</div>
+				
+				<!-- signup page -->
+				<div class="panel" title="Create account" id="signup-page">
+					<form id="signup-form" action="." method="post" class="form m-signup">
+						<div class="clearfix">
+							<label class="form_label">Enter your username</label>
+							<input class="input-text" type="text" name="username" id="signup-name" data-placeholder="">
+							
+							<label class="form_label">Enter your email</label>
+							<input class="input-text" type="text" name="email" id="signup-email" data-placeholder="">
+							
+							<label class="form_label">Enter your password</label>
+							<input class="input-text" type="password" name="password" id="signup-password">
+						</div>
+						
+						<input type="submit" value="Create account" class="button">
+					</form>
+				</div>
+				
+				<!-- login page -->
+				<div class="panel" title="Login into your account" id="login-page">
+					<form id="login-form" action="." method="post" class="form m-login">
+						<div class="clearfix">
+							<label class="form_label">Username</label>
+							<input class="input-text" type="text" name="username" id="login-name" data-placeholder="">
+							
+							<label class="form_label">Password</label>
+							<input class="input-text" type="password" name="password" id="login-password">
+						</div>
+						
+						<input type="submit" value="Login" class="button">
+					</form>
+				</div>
+			</div>
+			
+			<nav title="Settings page" id="settings">
+				<input type="text" value="Search" class="search-field">
+				
+				<a href="#signup-page" class="button m-settings m-first" id="user-signup" title="Signup">Signup</a>
+				<a href="#login-page" class="button m-settings" id="user-login" title="Login">Login</a>
+			</nav>
+        </div>
+		
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+		
+		<script type="text/javascript" src="cordova.js"></script>
+		
+        <script src="scripts/78513c77.vendor.js"></script>
+		
+        <script src="scripts/e0c9db52.main.js"></script>
+</body>
+</html>
